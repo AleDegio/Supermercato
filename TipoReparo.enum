@@ -1,0 +1,9 @@
+public enum Reparto{
+    ABBIGLIAMENTO,
+    ALIMENTARI,
+    ELETTRONICA,
+    BAMBINI,
+    CURA_DELLA_PERSONA,
+    LIBRI,
+    CASA;
+}
