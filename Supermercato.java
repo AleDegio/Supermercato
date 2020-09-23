@@ -12,7 +12,16 @@ public class Supermercato {
     }
 
     public void addProdotto(Prodotto prodotto){
-        this.prodotti.add(prodotto);
+        
+        for (Prodotto p : this.prodotti) {
+            if (p.getNomeProdotto().equals(nome)){
+                break;
+            }
+            cont++;
+        }
+        if(cont>this.prodotti.size()){
+            this.prodotti.add(prodotto);
+        }
     }
 
     public Prodotto ricercaProdotto(long codice){
